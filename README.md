@@ -1,4 +1,5 @@
 # Construction Equipment Allocation System
+<img width="1376" height="768" alt="Gemini_Generated_Image_6ilcay6ilcay6ilc" src="https://github.com/user-attachments/assets/029b82d5-9a47-4b24-8ab2-d4ddfd78bfaf" />
 
 A full-stack scheduling application for construction equipment bookings with conflict detection, priority-based displacement, maintenance blocking, and manager override workflows.
 
