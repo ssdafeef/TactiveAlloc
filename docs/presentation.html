@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipment Scheduling Assessment Presentation</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; }
+    .slide { max-width: 980px; margin: 0 auto; padding: 60px 40px; min-height: 100vh; box-sizing: border-box; }
+    h1 { font-size: 42px; margin-bottom: 20px; }
+    h2 { font-size: 30px; margin-bottom: 16px; }
+    ul { font-size: 24px; line-height: 1.8; }
+    .small { font-size: 18px; }
+    .highlight { color: #7dd3fc; }
+    .footer { margin-top: 40px; font-size: 18px; color: #cbd5e1; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>AI-Powered QA Automation & Software Engineering Assessment</h1>
+    <h2 class="highlight">Construction Equipment Allocation System</h2>
+    <ul>
+      <li>Designed and built a real scheduling workflow for equipment bookings</li>
+      <li>Implemented maintenance windows, priority conflicts, and transport buffer logic</li>
+      <li>Added shift-aware handling for morning, afternoon, and full-day bookings</li>
+      <li>Validated the system with automated backend tests</li>
+    </ul>
+    <div class="footer">Tactive Assessment</div>
+  </div>
+
+  <div class="slide">
+    <h2>Problem</h2>
+    <ul>
+      <li>Equipment can only be assigned to one job at a time</li>
+      <li>Maintenance must block unavailable machines</li>
+      <li>High-priority jobs should win when conflict occurs</li>
+      <li>Transport time between sites must be respected</li>
+    </ul>
+  </div>
+
+  <div class="slide">
+    <h2>Solution</h2>
+    <ul>
+      <li>FastAPI backend with SQLAlchemy persistence</li>
+      <li>React frontend for operational workflow</li>
+      <li>Google OR-Tools CP-SAT for conflict resolution</li>
+      <li>Shift-aware scheduling logic for morning/afternoon/full-day bookings</li>
+    </ul>
+  </div>
+
+  <div class="slide">
+    <h2>Testing and AI Loop</h2>
+    <ul>
+      <li>Created automated backend tests for success and failure paths</li>
+      <li>Captured red-run evidence and corrected failures through the AI loop</li>
+      <li>Verified final behavior with the backend test suite</li>
+    </ul>
+  </div>
+
+  <div class="slide">
+    <h2>Key Outcomes</h2>
+    <ul>
+      <li>Non-overlapping shifts can coexist on the same day</li>
+      <li>Full-day bookings are blocked by morning or afternoon maintenance</li>
+      <li>Transport buffer rules are enforced across different sites</li>
+      <li>Documentation and evidence are stored in the repository</li>
+    </ul>
+  </div>
+</body>
+</html>
